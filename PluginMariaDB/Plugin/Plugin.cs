@@ -9,6 +9,7 @@ using PluginMariaDB.API.Discover;
 using PluginMariaDB.API.Factory;
 using PluginMariaDB.API.Read;
 using PluginMariaDB.API.Replication;
+using PluginMariaDB.API.Write;
 using PluginMariaDB.DataContracts;
 using PluginMariaDB.Helper;
 
@@ -31,7 +32,7 @@ namespace PluginMariaDB.Plugin
         }
 
         /// <summary>
-        /// Establishes a connection with MySQL.
+        /// Establishes a connection with MariaDB.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="context"></param>
@@ -300,7 +301,7 @@ namespace PluginMariaDB.Plugin
         }
 
         /// <summary>
-        /// Configures replication writebacks to MySQL
+        /// Configures replication writebacks to MariaDB
         /// </summary>
         /// <param name="request"></param>
         /// <param name="context"></param>
@@ -357,7 +358,7 @@ namespace PluginMariaDB.Plugin
         }
 
         /// <summary>
-        /// Prepares writeback settings to write to MySQL
+        /// Prepares writeback settings to write to MariaDB
         /// </summary>
         /// <param name="request"></param>
         /// <param name="context"></param>
@@ -402,7 +403,7 @@ namespace PluginMariaDB.Plugin
         }
 
         /// <summary>
-        /// Writes records to MySQL
+        /// Writes records to MariaDB
         /// </summary>
         /// <param name="requestStream"></param>
         /// <param name="responseStream"></param>
@@ -413,7 +414,7 @@ namespace PluginMariaDB.Plugin
         {
             try
             {
-                Logger.Info("Writing records to MySQL...");
+                Logger.Info("Writing records to MariaDB...");
             
                 var schema = _server.WriteSettings.Schema;
                 var inCount = 0;
@@ -449,7 +450,7 @@ namespace PluginMariaDB.Plugin
                     }
                 }
             
-                Logger.Info($"Wrote {inCount} records to MySQL.");
+                Logger.Info($"Wrote {inCount} records to MariaDB.");
             }
             catch (Exception e)
             {

@@ -639,7 +639,7 @@ namespace PluginMariaDBTest.Plugin
             // setup
             Server server = new Server
             {
-                Services = {Publisher.BindService(new PluginMySQL.Plugin.Plugin())},
+                Services = {Publisher.BindService(new PluginMariaDB.Plugin.Plugin())},
                 Ports = {new ServerPort("localhost", 0, ServerCredentials.Insecure)}
             };
             server.Start();
