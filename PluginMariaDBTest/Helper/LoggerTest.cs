@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using PluginMariaDB.Helper;
 using Xunit;
@@ -6,7 +7,7 @@ namespace PluginMariaDBTest.Helper
 {
     public class LoggerTest
     {
-        private static string _path = @"logs/plugin-mysql-log.txt";
+        private static string _path = @"logs/plugin-mariadb-log.txt";
         
         [Fact]
         public void VerboseTest()
