@@ -17,7 +17,7 @@ namespace PluginMariaDB.Helper
         }
 
         private static string _logPrefix = "";
-        private static string _path = @"plugin-mysql-log.txt";
+        private static string _path = @"plugin-mariadb-log.txt";
         private static LogLevel _level = LogLevel.Info;
         private static ReaderWriterLockSlim _readWriteLock = new ReaderWriterLockSlim();
         
