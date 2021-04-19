@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Naveego.Sdk.Logging;
 using PluginMariaDB.API.Factory;
 using PluginMariaDB.DataContracts;
-using PluginMariaDB.Helper;
 
 namespace PluginMariaDB.API.Replication
 {

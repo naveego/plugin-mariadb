@@ -1,11 +1,11 @@
 using System;
 using System.Threading.Tasks;
+using Naveego.Sdk.Logging;
 using Naveego.Sdk.Plugins;
 using Newtonsoft.Json;
 using PluginMariaDB.API.Factory;
+using PluginMariaDB.API.Utility;
 using PluginMariaDB.DataContracts;
-using PluginMariaDB.Helper;
-using Constants = PluginMariaDB.API.Utility.Constants;
 
 namespace PluginMariaDB.API.Replication
 {
