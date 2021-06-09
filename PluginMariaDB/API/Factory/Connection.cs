@@ -1,7 +1,7 @@
 using System.Data;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
 using PluginMariaDB.Helper;
+using MySqlConnector;
 
 namespace PluginMariaDB.API.Factory
 {
