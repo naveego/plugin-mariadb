@@ -11,7 +11,8 @@ namespace PluginMariaDB.API.Write
             {
                 {"ui:order", new []
                 {
-                    "StoredProcedure"
+                    "StoredProcedure",
+                    "GoldenRecordIdParam"
                 }}
             };
             return JsonConvert.SerializeObject(uiJsonObj);
