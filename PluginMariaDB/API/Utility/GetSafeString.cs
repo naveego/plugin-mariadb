@@ -6,5 +6,16 @@ namespace PluginMariaDB.API.Utility
         {
             return unsafeString.Replace(escapeChar, newValue);
         }
+        
+        public static string GetSafeString(string unsafeString, params (string escapeChar, string newValue)[] replacePairs)
+        {
+            var result = (string)unsafeString.Clone();
+            foreach (var pair in replacePairs)
+            {
+                result = result.Replace(pair.escapeChar, pair.newValue);
+            }
+
+            return result;
+        }
     }
 }
