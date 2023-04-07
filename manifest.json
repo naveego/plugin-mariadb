@@ -4,7 +4,7 @@
   "description": "Publisher which connects to MariaDB",
   "apiVersion": "2",
   "versionDescription": "Version 2",
-  "version": "1.0.0",
+  "version": "1.5.3",
   "iconFile": "icon.png",
   "executable": "PluginMariaDB",
   "kind": "publisher",
